@@ -1,0 +1,30 @@
+Prvo treba ubaciti biblioteku koja služi za unos/ispis podataka iz/u fajlove:
+#include <fstream>
+
+Kad želimo unijeti podatke iz fajla napravimo objekat ifstream:
+ifstream ulaz; - on je u školi koristio naziv in(input) al isto je to
+
+kad se to napravi, otvori se fajl:
+ulaz.open("ulaz.in");
+
+U ulazu se nalaze sve vrijednosti iz tog fajla i kad ih želimo izvući to uradimo ovako:
+ulaz >> a(neka varijabla);
+Kad izvučemo jednu vrijednosti iz ulaza, te vrijednosti više nema u ulazu.
+
+Kad završimo sa unosom vrijednosti u program zatvorimo ifstream:
+ulaz.close();
+
+---------------
+
+Za izlaz podataka slično je ko sa ulazom.
+Napravimo objekat ofstream:
+ofstream izlaz;
+
+otvorimo fajl za izlaz:
+ofstream.open("izlaz.out"), on je koristio izlaz.in al ovo je prikladnije namjeni, al nije ni to problem koristit ako ste navikli na to.
+
+izlaz željenih vrijednosti u fajl se radi ovako:
+izlaz << a(neka varijabla);
+
+I kad smo gotovi sa tim zatvorimo ofstream:
+ofstream.close();
