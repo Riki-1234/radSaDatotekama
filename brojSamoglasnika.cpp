@@ -4,7 +4,7 @@ using namespace std;
 
 int main() {
 	ifstream ulaz;
-	ulaz.open("input.in");
+	ulaz.open("ulaz.in");
 
 	string recenica;
 	ulaz >> recenica;
@@ -21,7 +21,7 @@ int main() {
 	}
 
 	ofstream izlaz;
-	izlaz.open("output.out");
+	izlaz.open("izlaz.out");
 	izlaz << "Broj samoglasnika: " << brojac;
 	izlaz.close();
 }
