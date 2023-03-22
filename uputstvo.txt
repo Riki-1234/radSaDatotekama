@@ -21,7 +21,8 @@ Napravimo objekat ofstream:
 ofstream izlaz;
 
 otvorimo fajl za izlaz:
-ofstream.open("izlaz.out"), on je koristio izlaz.in al ovo je prikladnije namjeni, al nije ni to problem koristit ako ste navikli na to.
+ofstream.open("izlaz.out"), on je koristio izlaz.in al ovo je prikladnije namjeni, al nije 
+ni to problem koristit ako ste navikli na to.
 
 izlaz željenih vrijednosti u fajl se radi ovako:
 izlaz << a(neka varijabla);
