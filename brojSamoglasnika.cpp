@@ -7,7 +7,7 @@ int main() {
 	ulaz.open("ulaz.in");
 
 	string recenica;
-	ulaz >> recenica;
+	getline(ulaz, recenica);
 	ulaz.close();
 
 	string samoglasnici = "aeiouAEIOU";
